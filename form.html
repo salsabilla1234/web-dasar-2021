@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+             
+                <h3>&emsp;&emsp;&emsp;&emsp;&emsp;Form Biodata</h3>
+                
+                    <div class="mb-3">
+                        <label for="nim">NIM</label>
+                        <input required class="form-control" name="nim" type="text" id="nim" style="width: 120px;"> 
+                    </div>
+                    
+                    <div class="mb-3">
+                    <label for="nama">Nama</label>
+                      <input required class="form-control" name="nama" type="text" id="nama"> 
+                    </div>
+                 
+                    <div class="mb-3">
+                      <label for="jk">Jenis Kelamin</label><br>                 
+                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="jk" id="btnradio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary" for="btnradio1">Pria</label>
+                      
+                        <input type="radio" class="btn-check" name="jk" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio2">Wanita</label>
+                      
+                        <input type="radio" class="btn-check" name="jk" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btnradio3">Transgender</label>
+                      </div>
+                     <!-- <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="jk"     >
+                        <label class="btn btn-outline-primary" for="btnradio1">Pria</label>
+                        <input type="radio" class="btn-check" name="jk"  >
+                        <label class="btn btn-outline-primary" for="btnradio1">Wanita</label>
+                        <!-- <input type="radio" name="jk" value="l"> Pria -->
+                        <!-- <input type="radio" name="jk" value="p"> Wanita -->
+                      
+                     </div>
+                 
+                     <div class="mb-3">
+                        <label for="jurursan">Jurusan</label> 
+                        <select class="form-control">
+                            <option value="">Pilih Jurusan</option>
+                            <option value="D3SI">D3 SI</option>
+                            <option value="S1RPL">S1 RPL</option>
+                            <option value="S1MANAJEMEN">S1 MANAJEMEN</option>
+                            <option value="S1AKUNTANSI">S1 AKUNTANSI</option>
+                        </select>
+                     </div>
+                 
+                     <div class="mb-3">
+                        <label for="hobby">Hobby</label>  <br>
+                            <input type="checkbox" name="cekhobby[]" value="komputer"> Komputer
+                            <input type="checkbox" name="cekhobby[]" value="musik"> Musik
+                            <input type="checkbox" name="cekhobby[]" value="olahraga"> Olahraga
+                            <input type="checkbox" name="cekhobby[]" value="travelling"> Travelling
+                     </div>
+                 
+                 
+                    <div class="mb-3">
+                      <label for="catatan">Catatan</label>
+                        <textarea required class="form-control"name="catatan" id="catatan" cols="50" rows="5"></textarea>
+                     </div>
+                 
+                 
+                    <div class="mb-3">
+                      <label for="foto">Foto</label>
+                        <input type="file" name="foto" accept="image/*">
+                     </div>
+                 
+                 
+                    <div class="mb-3">
+                     <label for="email">E-Mail</label> 
+                        <input Required  class="form-control" type="email" name ="email" id="email">
+                     </div>
+                 
+                     <div class="mb-3">
+                     <label for="pass">Sandi Login</label> 
+                        <input Required class="form-control" type="password" name ="sandi" id="sandi">
+                     </div>
+                 
+                     <div class="mb-3">
+                     <label for="pass">Ulangi Sandi Login</label> 
+                        <input Required class="form-control" type="password" name ="ulang" id="ulang">
+                 </div>
+
+                 <div class="mb-3">
+                  <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" name="submit" class="btn btn-danger">Left</button>
+                    <button type="button" class="btn btn-warning">Middle</button>
+                    <button type="button" class="btn btn-success">Right</button>
+                  </div>
+                        <input type="submit" name="submit" value="Simpan">
+                        <input type="reset" name="batal" value="Batal">
+                        <button type="button" onclick="alert('Lengkapi data anda!')">Peringatan</button>
+                 </div>
+        </form>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
